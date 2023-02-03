@@ -1,38 +1,73 @@
+body {
+  background-color: rgb(234, 234, 234);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  margin-top: 90px;
+}
+
+h1 {
+  margin: 0px
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: fixed;
+  text-align: center;
+  background-color: rgb(185, 64, 255);
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 80px;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 207, 255);
+  margin: 0px auto 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-container {
+  width: auto;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(250, 235, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.post {
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px 7px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px 2px rgb(245, 212, 255);
+}
+
+.tooltip {
+  position: absolute;
+  top: -28px;
+  background-color: black;
   color: white;
+  padding: 3px;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip-container {
+  position: relative;
 }
